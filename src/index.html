@@ -7,8 +7,37 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
 </head>
 <body>
+  <!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li ><a href="/v">Véhicule <span class="sr-only">(current)</span></a></li>
+          <li ><a href="/c">Chauffeur</a></li>
+          <li ><a href="/g">Groupe</a></li>
+          
+        </ul>
+        
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
   <app-root></app-root>
 </body>
+<script src="/assets/js/jquery-3.2.1.min.js" ></script>
+<script src="/assets/js/bootstrap.min.js" ></script>
+<script>
+$(".nav a").on("click", function(){
+  $(".nav").find(".active").removeClass("active");
+  $(this).parent().addClass("active");
+});
+</script>
 </html>
