@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 /* components */
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ const appRoutes:Routes =[
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [ChauffeurService,GroupeService,VehiculeService],
